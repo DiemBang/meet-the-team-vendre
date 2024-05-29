@@ -1,13 +1,21 @@
 <script setup>
+import { ref } from 'vue'
 import HelloWorld from './components/HelloWorld.vue'
 import Portrait from './components/Portrait.vue'
+
+const users = ref([
+  { name: 'Diem Bang', contact:'diem@mail.com' },
+  { name: 'Bosse Pettersson Bang', contact:'bosse@mail.com' },
+  { name: 'Jakob Pettersson', contact:'jakob@mail.com' }
+  ])
 </script>
 
 <template>
-  <div>
+  
+<HelloWorld msg="Our Team" />
+  <div v-for="user in users">
+    <Portrait :name="user.name" :contact="user.contact" />
   </div>
-  <HelloWorld msg="Our Team" />
-  <Portrait name="Diem" contact="diem@mail.com"/>
 </template>
 
 <style scoped>
