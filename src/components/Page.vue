@@ -17,6 +17,9 @@ const getUsers = async (page) => {
 }
 getUsers(currentPage);
 
+const goToNextPage = () => {
+    getUsers(2);
+}
 </script>
 
 <template>  
@@ -26,5 +29,5 @@ getUsers(currentPage);
             <Portrait :firstName="user.first_name" :lastName="user.last_name" :contact="user.contact" :img="user.avatar" />
         </div>
     </div>
-    <button id="nextPage">Next page</button>
+    <button id="nextPage" @click="goToNextPage()">Next page</button>
 </template>
