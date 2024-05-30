@@ -19,7 +19,9 @@ getUsers()
 
 <template>  
     <h1>Our Team</h1>
-    <div v-for="user in users">
-        <Portrait :name="user.first_name" :contact="user.contact" :img="user.avatar" />
+    <div class="portraits">
+        <div class="portrait-container" v-for="user in users">
+            <Portrait :name="user.first_name" :contact="user.contact" :img="user.avatar" />
+        </div>
     </div>
 </template>
