@@ -15,16 +15,16 @@ const getUsers = async (page) => {
     console.log(response.data)
   })
 }
-getUsers(currentPage);
+getUsers(currentPage.value);
 
 const goToNextPage = () => {
     currentPage.value = 2;
-    getUsers(currentPage);    
+    getUsers(currentPage.value);    
 }
 
 const goToPreviousPage = () => {
     currentPage.value = 1;
-    getUsers(currentPage);    
+    getUsers(currentPage.value);    
 }
 </script>
 
