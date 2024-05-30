@@ -20,6 +20,6 @@ getUsers()
 <template>  
     <h1>Our Team</h1>
     <div v-for="user in users">
-        <Portrait :name="user.first_name" :contact="user.contact" />
+        <Portrait :name="user.first_name" :contact="user.contact" :img="user.avatar" />
     </div>
 </template>
