@@ -1,19 +1,21 @@
 <script setup>
-import { ref } from 'vue'
+import { ref } from 'vue';
 //import HelloWorld from './components/HelloWorld.vue'
-import Portrait from './Portrait.vue'
+import Portrait from './Portrait.vue';
 import axios from "axios";
 
 const apiUrl = "https://reqres.in/api/users";
 const users = ref([]);
+let currentPage = 1;
 
-const getUsers = async () => {
-  await axios.get(apiUrl).then((response) => {
+const getUsers = async (page) => {
+    let url = apiUrl +"?page="+page;
+  await axios.get(url).then((response) => {
     users.value = response.data.data
     console.log(response.data)
   })
 }
-getUsers()
+getUsers(currentPage);
 
 </script>
 
@@ -24,4 +26,5 @@ getUsers()
             <Portrait :firstName="user.first_name" :lastName="user.last_name" :contact="user.contact" :img="user.avatar" />
         </div>
     </div>
+    <button id="nextPage">Next page</button>
 </template>
