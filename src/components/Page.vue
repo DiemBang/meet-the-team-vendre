@@ -40,15 +40,15 @@ const goToPreviousPage = () => {
             <Portrait :firstName="user.first_name" :lastName="user.last_name" :contact="user.email" :img="user.avatar" />
             </div>
         </div>
-        <button id="nextPage" @click="goToNextPage()" :class="{hidden:currentPage===totalPages}">Next page</button>
-        <button id="previousPage" @click="goToPreviousPage()" :class="{hidden:currentPage===1}">Previous page</button>
+        <button id="nextPage" @click="goToNextPage()" :class="{hidden:currentPage===totalPages}">Next Page</button>
+        <button id="previousPage" @click="goToPreviousPage()" :class="{hidden:currentPage===1}">Previous Page</button>
     </div>
 </template>
 
 <style scoped>
 
 .page-background {
-    width: 100%;
+    padding: 1rem;
 }
 
 .hidden {

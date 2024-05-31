@@ -10,4 +10,7 @@ import Page from './components/Page.vue'
 
 <style scoped>
 
+
+
+
 </style>
