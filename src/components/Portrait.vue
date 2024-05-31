@@ -27,6 +27,7 @@ defineProps({
   flex-direction: column; /* Align items vertically */
   align-items: center; /* Center horizontally */
   margin: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .contact {
@@ -45,15 +46,18 @@ defineProps({
     margin: 1rem;
     position: relative;
     border-radius: 50%;
-    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px 5px white; /* rgba(0, 0, 0, 0.5); */
 }
 
 img {
   display: inline;
   margin: 0 auto;
-
   /*border: 2px solid yellow;*/
   height: 100%;
   width: auto;
+}
+
+a {
+    color: black;
 }
 </style>
