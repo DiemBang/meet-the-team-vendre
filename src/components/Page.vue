@@ -37,7 +37,7 @@ const goToPreviousPage = () => {
     
         <div class="portraits">
             <div class="portrait-container" v-for="user in users">
-            <Portrait :firstName="user.first_name" :lastName="user.last_name" :contact="user.contact" :img="user.avatar" />
+            <Portrait :firstName="user.first_name" :lastName="user.last_name" :contact="user.email" :img="user.avatar" />
             </div>
         </div>
         <button id="nextPage" @click="goToNextPage()" :class="{hidden:currentPage===totalPages}">Next page</button>
@@ -54,8 +54,7 @@ const goToPreviousPage = () => {
 .hidden {
     display: none;
 }
-</style>
 
-<style>
 
 </style>
+
