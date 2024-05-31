@@ -12,7 +12,7 @@ defineProps({
 
 <template>
     <section class="portrait">
-        <div>
+        <div class="img-container">
             <img :src="img" alt="Photo of the team member">
         </div>
         <div class="name">{{ firstName + ' ' + lastName }}</div>
@@ -38,11 +38,22 @@ defineProps({
     margin-right: 0.5rem;
     
 }
+.img-container {
+    width: 8rem;
+    height: 8rem;
+    overflow: hidden;
+    margin: 1rem;
+    position: relative;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+}
 
 img {
-  border-radius: 50%;
+  display: inline;
+  margin: 0 auto;
+
   /*border: 2px solid yellow;*/
-  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
-  margin: 1rem;
+  height: 100%;
+  width: auto;
 }
 </style>
