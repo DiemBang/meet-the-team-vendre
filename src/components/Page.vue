@@ -20,12 +20,12 @@ const getUsers = async (page) => {
 getUsers(currentPage.value);
 
 const goToNextPage = () => {
-    currentPage.value = 2;
+    currentPage.value += 1;
     getUsers(currentPage.value);
 }
 
 const goToPreviousPage = () => {
-    currentPage.value = 1;
+    currentPage.value -= 1;
     getUsers(currentPage.value);    
 }
 </script>
