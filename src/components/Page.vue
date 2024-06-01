@@ -56,5 +56,19 @@ const goToPreviousPage = () => {
 }
 
 
+@media screen and (min-width: 1280px) {
+    .portraits {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .portrait-container {
+        flex-basis: 33%;
+        text-align: center;
+    }
+
+   
+}
+
 </style>
 
