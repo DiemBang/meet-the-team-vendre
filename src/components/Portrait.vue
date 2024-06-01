@@ -13,7 +13,7 @@ defineProps({
 <template>
     <section class="portrait">
         <div class="img-container">
-            <img :src="img" alt="Photo of the team member">
+            <img :src="img" alt="Photo of the team member" class="hover-effect">
         </div>
         <div class="name">{{ firstName + ' ' + lastName }}</div>
         <div class="contact"><span class="material-symbols-outlined">mail</span><a :href="`mailto:${contact}`">Contact me</a></div>
@@ -26,7 +26,7 @@ defineProps({
   display: flex;
   flex-direction: column; /* Align items vertically */
   align-items: center; /* Center horizontally */
-  margin: 1.3rem;
+  margin: 1.2rem;
   font-size: 1.2rem;
 }
 
@@ -55,6 +55,15 @@ img {
   /*border: 2px solid yellow;*/
   height: 100%;
   width: auto;
+}
+
+.hover-effect {
+    border: none; /* Initial border state */
+    transition: border 0.3s ease; /* Smooth transition for the border effect */
+}
+
+.hover-effect:hover {
+    transform: scale(1.3); /* Zoom in the image */
 }
 
 a {

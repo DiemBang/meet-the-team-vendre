@@ -48,21 +48,22 @@ const goToPreviousPage = () => {
 <style scoped>
 
 .page-background {
-    padding: 1rem;
+    
+    margin: 0;
+    padding: 0;
 }
 
 .hidden {
     display: none;
 }
 
-
+/* Desktop */
 @media screen and (min-width: 1280px) {
     
     .portraits {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        height: 100vh;
         padding: 20px;
         box-sizing: border-box;
     }
@@ -75,8 +76,23 @@ const goToPreviousPage = () => {
     }
 }
 
-   
-
+/* Tablet in portrait mode */
+@media screen and (min-width: 768px) and (max-width: 1279px) and (orientation: portrait) {
+    .portraits {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .portrait-container {
+        flex-basis: 50%;
+        text-align: center;
+        margin: 0;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+}
 
 </style>
 
