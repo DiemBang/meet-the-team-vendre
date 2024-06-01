@@ -76,6 +76,24 @@ const goToPreviousPage = () => {
     }
 }
 
+/* Tablet in landscape mode */
+  @media screen and (min-width: 768px) and (max-width: 1367px) and (orientation: landscape) {
+    .portraits {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .portrait-container {
+        flex-basis: 33%;
+        text-align: center;
+        margin: 0;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+  } 
+
 /* Tablet in portrait mode */
 @media screen and (min-width: 768px) and (max-width: 1279px) and (orientation: portrait) {
     .portraits {
