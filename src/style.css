@@ -31,14 +31,12 @@ body {
   display: flex;
   background-color: beige;
   border: 1rem solid white;
-  
-  
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 button {
@@ -69,10 +67,7 @@ button:focus-visible {
   width: 100%;
   max-width:100%;
   text-align: center;
-  
-
-
-  
+  min-height: calc(100vh - 2rem);
 }
 
 @media (prefers-color-scheme: light) {
