@@ -1,6 +1,5 @@
 <script setup>
 import { ref } from 'vue';
-//import HelloWorld from './components/HelloWorld.vue'
 import Portrait from './Portrait.vue';
 import axios from "axios";
 
