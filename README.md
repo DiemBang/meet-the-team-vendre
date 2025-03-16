@@ -3,6 +3,8 @@
 ## Overview
 This project is a "Meet the Team" page created using Vue.js. The page dynamically pulls team member data from an external API and displays it in a simple layout. The tech stack used for this project includes Vue.js for the front-end framework, CSS for styling, HTML for the structure, and JavaScript for scripting.
 
+*📌 This project was part of an interview task for an internship recruitment process, where I successfully secured the position.*
+
 ## Features
 - **Dynamic Data Fetching:** Team member information is fetched from an external API.
 - **Responsive Design:** The page is designed to be responsive and is adapted for both desktop and mobile devices.
